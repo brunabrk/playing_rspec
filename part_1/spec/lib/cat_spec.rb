@@ -21,5 +21,16 @@ describe Cat do
 		cat.should be_hunter
 	end
 
+	it 'it is hungry' do
+		cat.hungry?
+		cat.should be_hungry
+	end
+
+	it 'eats mouses' do
+		cat.hungry?
+		cat.should be_eating_mouses
+	end
+
 	it { should respond_to(:name)}
+
 end
